@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+    <body>
+        <!-- 导航栏（使用Bootstrap组件） -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Site</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主页内容 -->
+        <header class="jumbotron text-center">
+            <div class="container">
+                <h1>Welcome to My Homepage</h1>
+                <p class="lead">A simple website made for CS50's homework</p>
+                <button id="greetBtn" class="btn btn-primary">Say Hello</button>
+            </div>
+        </header>
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/me.jpg" class="card-img-top standard-img" alt="About">
+                        <div class="card-body">
+                            <h5 class="card-title">About Me</h5>
+                            <p>Learn more about who I am and my background.</p>
+                            <a href="about.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/hobby.jpg" class="card-img-top standard-img" alt="Hobbies">
+                        <div class="card-body">
+                            <h5 class="card-title">My Hobbies</h5>
+                            <p>Discover the things I love to do in my free time.</p>
+                            <a href="hobbies.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/contact.jpg" class="card-img-top standard-img" alt="Contact">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Me</h5>
+                            <p>Get in touch with me through my contact info.</p>
+                            <a href="contact.html" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="bg-light py-3 mt-5">
+            <div class="container text-center">
+                <p>&copy; 2023 My Homepage. Made with ❤️ for CS50.</p>
+            </div>
+        </footer>
+
+        <!-- 引入Bootstrap JS和jQuery（用于导航栏折叠等交互） -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- 引入自定义JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

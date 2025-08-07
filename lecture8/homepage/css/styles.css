@@ -1,0 +1,56 @@
+/* 1. 标签选择器：修改全局字体 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. 类选择器：修改卡片阴影 */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* 3. 类选择器：卡片悬停效果 */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 4. ID选择器：主页按钮样式 */
+#greetBtn {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* 5. 后代选择器：导航栏链接 */
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    margin-left: 15px;
+}
+
+/* 6. 伪类选择器：导航栏链接 hover 效果 */
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* 7. 组合选择器：页面标题样式 */
+h1, h5 {
+    color: #343a40;
+}
+
+/* 8. 自定义类：段落间距 */
+.section-text {
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+/* 9. 统一图片尺寸 */
+.standard-img {
+    /* 水平居中核心代码 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 保持之前的尺寸设置 */
+    width: 300px;  /* 固定宽度 */
+    height: 300px; /* 固定高度 */
+    object-fit: cover; /* 保持比例裁剪图片（避免拉伸变形） */
+}
+
